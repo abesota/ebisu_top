@@ -1,0 +1,24 @@
+//文字コードはutf-8
+@charset "UTF-8";
+
+// ウィンドウィサイズ出し分け
+@mixin forPc {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin forTab {
+  @media screen and (min-width: 767px) and ( max-width: 1024px) {
+    @content;
+  }
+}
+@mixin forSpTab {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin forSp {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}

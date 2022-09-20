@@ -1,0 +1,26 @@
+//文字コードはutf-8
+@charset "UTF-8";
+@use "_mixins" as m;
+@use "_fonts" as f;
+@use "_color" as c;
+
+#footer {
+  padding: 18px 0;
+  text-align: center;
+  @include f.bd-btm(5);
+  background-color: #eee;
+
+  p { font-weight: f.$fw-bg; letter-spacing: 0.13em;}
+
+  @include m.forSp {
+    box-sizing: border-box;
+    height: 50px;
+    padding: initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include f.bd-btm(3.5);
+
+    p { font-size: 10px;}
+  }
+}
