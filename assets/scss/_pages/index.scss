@@ -1,4 +1,4 @@
-﻿//文字コードはutf-8
+//文字コードはutf-8
 @charset "UTF-8";
 @use "../_common/mixins" as m;
 @use "../_common/fonts" as f;
@@ -200,7 +200,7 @@ p {
     left: 0;
     z-index: 997;
     opacity: 1;
-    background: rgba(3,3,3,.5);
+    background: rgba(3,3,3,.2);
   }
 }
 // 画面暗く
